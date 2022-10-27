@@ -1,0 +1,38 @@
+*{
+	box-sizing: border-box;
+	background: #FFDCAB;
+	padding:0;
+	margin:0;
+}
+
+header{
+	display:block;
+}
+
+.first-header{
+	width:100%;
+	padding:1rem;
+	background: #2F2105;
+}
+.menu-btn {
+	visibility: hidden;
+}
+.nav{
+	visibility: visible;
+	font-family: cursive;
+}
+.menu-nav{
+	height:100%;
+	
+}
+.nav-itme{
+	display:inline;
+}
+.text-pic-area{
+	height:100vh;
+	padding-top: 35vh;
+	overflow:hidden;
+	text-align: center;
+	align-items: center;
+	background-image:src="images\coffee1.png";
+}
