@@ -76,14 +76,7 @@ img.image-grid {
     position: relative;
 }
 
-.favorite {
-    color: var(--red);
-    font-size: 1.2rem;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    cursor: pointer;
-}
+
 
 .ri-heart-fill {
     opacity: .7;
@@ -103,18 +96,7 @@ img.image-grid {
     cursor: pointer;
 }
  
-.wide {
-    grid-column: span 2;
-}
 
-.tall {
-    grid-row: span 2;
-}
-
-.big {
-    grid-column: span 2;
-    grid-row: span 2;
-}
 
 header {
     display: flex;
