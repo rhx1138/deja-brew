@@ -2979,7 +2979,7 @@ function CartItem(_ref) {
         _react2.default.createElement(
             "p",
             null,
-            "$20.99"
+            "$29.99"
         )
     );
 }
@@ -3205,7 +3205,7 @@ function Cart() {
         cartItems = _useContext.cartItems,
         emptyCart = _useContext.emptyCart;
 
-    var totalCost = 20.99 * cartItems.length;
+    var totalCost = 5.99 * cartItems.length;
     var totalCostDisplay = totalCost.toLocaleString("en-US", { style: "currency", currency: "USD" });
 
     var cartItemElements = cartItems.map(function (item) {
@@ -3304,12 +3304,21 @@ exports.default = Photos;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+      value: true
 });
 exports.getClass = getClass;
 function getClass(i) {
-    return 'big';
+      return 'big';
 }
+
+// export function getClass(i) {
+//     if (i % 5 === 0) {
+//         return 'big';
+//     }
+//     else if (i % 6 === 0) {
+//         return 'wide'
+//     }
+// }
 
 /***/ }),
 /* 31 */
