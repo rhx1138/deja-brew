@@ -24,24 +24,17 @@ function Image({className, img}) {
         }
     }
 
-
     return (
-        <div className={`${className} image-container`}>
+        <div 
+            className={`${className} image-container`}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+        >
             <img src={img.url} className="image-grid"/>
+            {heartIcon()}
+            {cartIcon()}
         </div>
     )
-
-    // return (
-    //     <div 
-    //         className={`${className} image-container`}
-    //         onMouseEnter={() => setHovered(true)}
-    //         onMouseLeave={() => setHovered(false)}
-    //     >
-    //         <img src={img.url} className="image-grid"/>
-    //         {heartIcon()}
-    //         {cartIcon()}
-    //     </div>
-    // )
 }
 
 Image.propTypes = {
