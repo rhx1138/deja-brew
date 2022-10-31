@@ -3109,19 +3109,21 @@ function Image(_ref) {
 
     return _react2.default.createElement(
         "div",
-        {
-            className: className + " image-container",
-            onMouseEnter: function onMouseEnter() {
-                return setHovered(true);
-            },
-            onMouseLeave: function onMouseLeave() {
-                return setHovered(false);
-            }
-        },
-        _react2.default.createElement("img", { src: img.url, className: "image-grid" }),
-        heartIcon(),
-        cartIcon()
+        { className: className + " image-container" },
+        _react2.default.createElement("img", { src: img.url, className: "image-grid" })
     );
+
+    // return (
+    //     <div 
+    //         className={`${className} image-container`}
+    //         onMouseEnter={() => setHovered(true)}
+    //         onMouseLeave={() => setHovered(false)}
+    //     >
+    //         <img src={img.url} className="image-grid"/>
+    //         {heartIcon()}
+    //         {cartIcon()}
+    //     </div>
+    // )
 }
 
 Image.propTypes = {
