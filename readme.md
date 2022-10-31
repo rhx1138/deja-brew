@@ -1,7 +1,7 @@
 # A coffee subscription website
 ## adding components to this branch
 
-Quick start:
+Quick start: Guide
 
 ```
 $ yarn # npm install
