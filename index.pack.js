@@ -3205,7 +3205,7 @@ function Cart() {
         cartItems = _useContext.cartItems,
         emptyCart = _useContext.emptyCart;
 
-    var totalCost = 5.99 * cartItems.length;
+    var totalCost = 29.99 * cartItems.length;
     var totalCostDisplay = totalCost.toLocaleString("en-US", { style: "currency", currency: "USD" });
 
     var cartItemElements = cartItems.map(function (item) {
