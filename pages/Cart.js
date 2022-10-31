@@ -5,7 +5,7 @@ import CartItem from "../components/CartItem"
 function Cart() {
     const [buttonText, setButtonText] = useState("Place Order")
     const {cartItems, emptyCart} = useContext(Context)
-    const totalCost = 29.99 * cartItems.length
+    const totalCost = 5.99 * cartItems.length
     const totalCostDisplay = totalCost.toLocaleString("en-US", {style: "currency", currency: "USD"})
     
     const cartItemElements = cartItems.map(item => (
