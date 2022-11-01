@@ -19,30 +19,30 @@ const Home = () => {
         <Container className="home-section" id="home">
           <Row>
             <Col md={6} classname="card-section">
-              <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={basicImg} />
-                <Card.Body>
-                  <Card.Title>Basic Plan</Card.Title>
-                  <Card.Text>
+              <Card style={{ width: '18rem' }} className="plan-card">
+                <Card.Img variant="top" src={basicImg} className="card-img"/>
+                <Card.Body className='text-center'>
+                  <Card.Title className='plan-card-title'>Basic Plan</Card.Title>
+                  <Card.Text className='plan-card-text'>
                     Some quick example text to build on the card title and make up the
                     bulk of the card's content.
                   </Card.Text>
-                  <Button variant="primary">Let's go shopping!</Button>
+                  <Button variant="primary" className='plan-card-button'>Let's go shopping!</Button>
                   {/* need to add onclick to go to shopping page for coffees
                   also has to have logged in auth  */}
                 </Card.Body>
               </Card>
             </Col>
             <Col md={6} classname="card-section">
-              <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={proImg} />
-                <Card.Body>
-                  <Card.Title>Pro Plan</Card.Title>
-                  <Card.Text>
+              <Card style={{ width: '18rem' }} className="plan-card">
+                <Card.Img variant="top" src={proImg} className="card-img"/>
+                <Card.Body className='text-center'>
+                  <Card.Title className='plan-card-title'>Pro Plan</Card.Title>
+                  <Card.Text className='plan-card-text'>
                     Some quick example text to build on the card title and make up the
                     bulk of the card's content.
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button variant="primary" className='plan-card-button'>Go somewhere</Button>
                 </Card.Body>
               </Card>
             </Col>
