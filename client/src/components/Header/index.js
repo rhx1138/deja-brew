@@ -1,50 +1,10 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-
-// import Auth from '../../utils/auth';
-
-// const Header = () => {
-//   const logout = event => {
-//     event.preventDefault();
-//     Auth.logout();
-//   };
-
-//   return (
-//     <header className="bg-secondary mb-4 py-2 flex-row align-center">
-//       <div className="container flex-row justify-space-between-lg justify-center align-center">
-//         <Link to="/">
-//           <h1>Deep Thoughts</h1>
-//         </Link>
-
-//         <nav className="text-center">
-//           {Auth.loggedIn() ? (
-//             <>
-//               <Link to="/profile">Me</Link>
-//               <a href="/" onClick={logout}>
-//                 Logout
-//               </a>
-//             </>
-//           ) : (
-//             <>
-//               <Link to="/login">Login</Link>
-//               <Link to="/signup">Signup</Link>
-//             </>
-//           )}
-//         </nav>
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default Header;
-
-
 import React from "react";
 import Auth from '../../utils/auth';
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faD, faB } from "@fortawesome/free-solid-svg-icons";
+
 
 function Header() {
     const logout = event => {
@@ -53,9 +13,9 @@ function Header() {
     };
 
     return (
-      <Navbar expand ="md" fixed="top">
+      <Navbar expand ="md" fixed="top" className="sticky">
         <Container>
-            <Navbar.Brand className="logo">
+            <Navbar.Brand className="d-flex">
                 <NavLink
                 style={{ textDecoration: "none", color: "black" }}
                 to="/">
@@ -70,13 +30,13 @@ function Header() {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto mx-5">
                     <NavLink to="/" className="nav" style={({ isActive }) => ({ 
-                        color: isActive ? 'orange' : 'gray', textDecoration: 'none' })}>
+                        color: isActive ? 'white' : 'gray', textDecoration: 'none' })}>
                         Home
                     </NavLink>
                     {Auth.loggedIn() ? (
                         <>
-                            <NavLink to="/profile" className="nav" style={({ isActive }) => ({ 
-                                color: isActive ? 'orange' : 'gray', textDecoration: 'none' })}>
+                            <NavLink to="/Profile" className="nav" style={({ isActive }) => ({ 
+                                color: isActive ? 'white' : 'gray', textDecoration: 'none' })}>
                                 Profile
                             </NavLink>
                             <a href="/" onClick={logout}>
@@ -85,12 +45,12 @@ function Header() {
                         </>
                         ) : (
                         <>
-                            <NavLink to="/contact" className="nav" style={({ isActive }) => ({ 
-                                color: isActive ? 'orange' : 'gray', textDecoration: 'none' })}>
+                            <NavLink to="/login" className="nav" style={({ isActive }) => ({ 
+                                color: isActive ? 'white' : 'gray', textDecoration: 'none' })}>
                                 Login
                             </NavLink>
-                            <NavLink to="/portfolio" className="nav" style={({ isActive }) => ({ 
-                                color: isActive ? 'orange' : 'gray', textDecoration: 'none' })}>
+                            <NavLink to="/signup" className="nav" style={({ isActive }) => ({ 
+                                color: isActive ? 'white' : 'gray', textDecoration: 'none' })}>
                                 Signup
                             </NavLink>
                         </>
@@ -103,4 +63,3 @@ function Header() {
   }
   
   export default Header;
-  
