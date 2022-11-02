@@ -3025,7 +3025,7 @@ function Header() {
             _reactRouterDom.Link,
             { to: "/" },
             _react2.default.createElement(
-                "h2",
+                "p",
                 null,
                 "Deja Brew"
             )

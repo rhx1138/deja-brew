@@ -1,13 +1,16 @@
 :root {
     --black: #150605;
     --red: #EA453C;
-    --pink: #F47B6E;
+    --dark-blue: #150651;
     --light-blue: #EFFBFE;
     --blue: #ACE6EC;
 }
 
-html, body {
-    font-family: 'Oswald', sans-serif;
+html,
+body {
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Ultra', serif;
     margin: 0;
     padding: 0;
 }
@@ -25,7 +28,7 @@ main.cart-page {
     padding: 10px;
 }
 
-.cart-page > h1 {
+.cart-page>h1 {
     text-align: center;
 }
 
@@ -39,18 +42,18 @@ main.cart-page {
     justify-content: center;
 }
 
-div.order-button > button {
+div.order-button>button {
     border-color: var(--black);
     cursor: pointer;
     padding: 15px;
     transition: all .2s ease-in-out;
 }
 
-div.order-button > button:focus {
+div.order-button>button:focus {
     outline: none;
 }
 
-div.order-button > button:disabled {
+div.order-button>button:disabled {
     border-color: lightgray;
 }
 
@@ -63,7 +66,7 @@ div.order-button > button:disabled {
 
 .cart-item img {
     margin-right: auto;
-    margin-left: 10px;   
+    margin-left: 10px;
 }
 
 img.image-grid {
@@ -89,7 +92,8 @@ img.image-grid {
     opacity: .7;
 }
 
-.ri-delete-bin-line, .ri-delete-bin-fill {
+.ri-delete-bin-line,
+.ri-delete-bin-fill {
     font-size: 1.3em;
     cursor: pointer;
 }
@@ -102,7 +106,7 @@ img.image-grid {
     right: 5px;
     cursor: pointer;
 }
- 
+
 .wide {
     grid-column: span 2;
 }
@@ -120,18 +124,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--pink);
+    background-color: var(--dark-blue);
     color: var(--light-blue);
     padding: 0 10px;
-    -webkit-box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
-    -moz-box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
-    box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
+    -webkit-box-shadow: 0px 2px 10px -5px rgba(21, 6, 5, 1);
+    -moz-box-shadow: 0px 2px 10px -5px rgba(21, 6, 5, 1);
+    box-shadow: 0px 2px 10px -5px rgba(21, 6, 5, 1);
 }
 
 a {
     text-decoration: none;
 }
 
-a:visited { color: var(--light-blue); }
-a:hover { color: var(--light-blue); }
-a:active { color: var(--light-blue); }
+a:visited {
+    color: var(--light-blue);
+}
+
+a:hover {
+    color: var(--light-blue);
+}
+
+a:active {
+    color: var(--light-blue);
+}
