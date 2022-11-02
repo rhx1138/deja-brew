@@ -30,18 +30,14 @@
         "isFavorite": false
     },
     {
-        "url": "/assets/images/basic.png",
+        "url": "/assets/images/9.png",
         "id": "7",
         "isFavorite": false
     },
     {
-        "url": "/assets/images/pro.png",
+        "url": "/assets/images/10.png",
         "id": "8",
         "isFavorite": false
-    },
-    {
-        "url": "/assets/images/enterprise.png",
-        "id": "9",
-        "isFavorite": false
     }
+   
 ]
