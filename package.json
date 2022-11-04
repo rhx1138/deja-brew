@@ -22,5 +22,8 @@
   "homepage": "https://github.com/rhx1138/deja-brew#readme",
   "devDependencies": {
     "concurrently": "^7.5.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
