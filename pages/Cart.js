@@ -1,6 +1,6 @@
 import React, {useState, useContext} from "react"
 import {Context} from "../Context"
-import CartItem from "../components/CartItem"
+import CartItem from "../components/Cartitem"
 
 function Cart() {
     const [buttonText, setButtonText] = useState("Place Order")

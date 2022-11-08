@@ -3189,9 +3189,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _Context = __webpack_require__(4);
 
-var _CartItem = __webpack_require__(24);
+var _Cartitem = __webpack_require__(24);
 
-var _CartItem2 = _interopRequireDefault(_CartItem);
+var _Cartitem2 = _interopRequireDefault(_Cartitem);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3209,7 +3209,7 @@ function Cart() {
     var totalCostDisplay = totalCost.toLocaleString("en-US", { style: "currency", currency: "USD" });
 
     var cartItemElements = cartItems.map(function (item) {
-        return _react2.default.createElement(_CartItem2.default, { key: item.id, item: item });
+        return _react2.default.createElement(_Cartitem2.default, { key: item.id, item: item });
     });
 
     function placeOrder() {
