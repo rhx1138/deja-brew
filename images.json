@@ -1,0 +1,12 @@
+[
+    {
+        "url": "/assets/images/basic.png",
+        "id": "1",
+        "isFavorite": false
+    },
+    {
+        "url": "/assets/images/pro.png",
+        "id": "2",
+        "isFavorite": false
+    }
+]
