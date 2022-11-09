@@ -1,17 +1,21 @@
-# A coffee subscription website
-## adding components to this branch
+# Deja-Brew
+# Description
+Grass roots coffee brand delivered to your door
 
-* original blend (red)
-* deja brew light 
-* deja brew medium
-* deja brew dark
-* french vanilla (light blue)
-* deja brew decaf (dark green)
-* colombian blend (dark orange)
-* ethiopian blend (purple)
 
-Quick start:
+# Link to Website
+App Website
+https://deja-brew-for-you.netlify.app/
+# Table of Contents
+  * [Contributing](#contributing)
+  * [Screenshots](#screenshots)
+# Contributing
+This application is open for use to the general public
+# Screenshots
+![screenshot one](/assets/images/landingPage.png "Home page")
+![screenshot two](/assets/images/cart.png "Checkout screen")
 
-```
-$ yarn # npm install
-$ yarn build # npm run build
+
+
+
+
